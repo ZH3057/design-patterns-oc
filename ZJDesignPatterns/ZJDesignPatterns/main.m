@@ -53,7 +53,7 @@ void sunInit (void) {
     Sun *s1 = [s copy];
     Sun *s2 = [s mutableCopy];
     Sun *s3 = [s1 copy];
-    NSLog(@"s: %p, s1: %p, s1: %p, s1: %p", s, s1, s2, s3);
+    NSLog(@"s: %p, s1: %p, s2: %p, s3: %p", s, s1, s2, s3);
 }
 
 
