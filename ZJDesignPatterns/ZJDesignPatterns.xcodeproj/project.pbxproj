@@ -15,6 +15,7 @@
 		BFBBB20420E1DD9B004F192E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB20320E1DD9B004F192E /* main.m */; };
 		BFBBB20E20E1DD9C004F192E /* ZJDesignPatternsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB20D20E1DD9C004F192E /* ZJDesignPatternsTests.m */; };
 		BFBBB21920E1DD9C004F192E /* ZJDesignPatternsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB21820E1DD9C004F192E /* ZJDesignPatternsUITests.m */; };
+		BFBBB22C20E1E21B004F192E /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB22B20E1E21B004F192E /* People.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		BFBBB21420E1DD9C004F192E /* ZJDesignPatternsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJDesignPatternsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBBB21820E1DD9C004F192E /* ZJDesignPatternsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJDesignPatternsUITests.m; sourceTree = "<group>"; };
 		BFBBB21A20E1DD9C004F192E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFBBB22A20E1E21B004F192E /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		BFBBB22B20E1E21B004F192E /* People.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		BFBBB1F320E1DD99004F192E /* ZJDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				BFBBB22920E1E0D7004F192E /* Prototype */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -154,6 +158,15 @@
 				BFBBB20320E1DD9B004F192E /* main.m */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		BFBBB22920E1E0D7004F192E /* Prototype */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBB22A20E1E21B004F192E /* People.h */,
+				BFBBB22B20E1E21B004F192E /* People.m */,
+			);
+			path = Prototype;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBBB22C20E1E21B004F192E /* People.m in Sources */,
 				BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */,
 				BFBBB20420E1DD9B004F192E /* main.m in Sources */,
 				BFBBB1F620E1DD99004F192E /* AppDelegate.m in Sources */,
