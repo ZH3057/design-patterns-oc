@@ -16,6 +16,7 @@
 		BFBBB20E20E1DD9C004F192E /* ZJDesignPatternsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB20D20E1DD9C004F192E /* ZJDesignPatternsTests.m */; };
 		BFBBB21920E1DD9C004F192E /* ZJDesignPatternsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB21820E1DD9C004F192E /* ZJDesignPatternsUITests.m */; };
 		BFBBB22C20E1E21B004F192E /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB22B20E1E21B004F192E /* People.m */; };
+		BFBBB23020E1EDCB004F192E /* Sun.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB22F20E1EDCB004F192E /* Sun.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		BFBBB21A20E1DD9C004F192E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFBBB22A20E1E21B004F192E /* People.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
 		BFBBB22B20E1E21B004F192E /* People.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		BFBBB22E20E1EDCB004F192E /* Sun.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sun.h; sourceTree = "<group>"; };
+		BFBBB22F20E1EDCB004F192E /* Sun.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sun.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +108,11 @@
 			isa = PBXGroup;
 			children = (
 				BFBBB22920E1E0D7004F192E /* Prototype */,
+				BFBBB22D20E1ECE8004F192E /* Singleton */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
+				BFBBB20320E1DD9B004F192E /* main.m */,
 			);
 			path = ZJDesignPatterns;
 			sourceTree = "<group>";
@@ -155,7 +160,6 @@
 				BFBBB1FF20E1DD9B004F192E /* LaunchScreen.storyboard */,
 				BFBBB1FD20E1DD9B004F192E /* Assets.xcassets */,
 				BFBBB20220E1DD9B004F192E /* Info.plist */,
-				BFBBB20320E1DD9B004F192E /* main.m */,
 			);
 			path = Supporting;
 			sourceTree = "<group>";
@@ -167,6 +171,15 @@
 				BFBBB22B20E1E21B004F192E /* People.m */,
 			);
 			path = Prototype;
+			sourceTree = "<group>";
+		};
+		BFBBB22D20E1ECE8004F192E /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBB22E20E1EDCB004F192E /* Sun.h */,
+				BFBBB22F20E1EDCB004F192E /* Sun.m */,
+			);
+			path = Singleton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +312,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFBBB23020E1EDCB004F192E /* Sun.m in Sources */,
 				BFBBB22C20E1E21B004F192E /* People.m in Sources */,
 				BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */,
 				BFBBB20420E1DD9B004F192E /* main.m in Sources */,
