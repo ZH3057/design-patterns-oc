@@ -23,6 +23,9 @@
 		BFBBB24320E38D00004F192E /* ProductB.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB24220E38D00004F192E /* ProductB.m */; };
 		BFBBB24620E38D16004F192E /* FactoryA.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB24520E38D16004F192E /* FactoryA.m */; };
 		BFBBB24920E38D4F004F192E /* FactoryB.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB24820E38D4F004F192E /* FactoryB.m */; };
+		BFBBB24D20E393A9004F192E /* Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB24C20E393A9004F192E /* Builder.m */; };
+		BFBBB25020E393EA004F192E /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB24F20E393EA004F192E /* Director.m */; };
+		BFBBB25420E39470004F192E /* Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB25320E39470004F192E /* Goods.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,14 @@
 		BFBBB24720E38D4F004F192E /* FactoryB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryB.h; sourceTree = "<group>"; };
 		BFBBB24820E38D4F004F192E /* FactoryB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryB.m; sourceTree = "<group>"; };
 		BFBBB24A20E38D9D004F192E /* FactoryMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryMethod.h; sourceTree = "<group>"; };
+		BFBBB24B20E393A9004F192E /* Builder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Builder.h; sourceTree = "<group>"; };
+		BFBBB24C20E393A9004F192E /* Builder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Builder.m; sourceTree = "<group>"; };
+		BFBBB24E20E393EA004F192E /* Director.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Director.h; sourceTree = "<group>"; };
+		BFBBB24F20E393EA004F192E /* Director.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Director.m; sourceTree = "<group>"; };
+		BFBBB25120E39414004F192E /* BuilderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderProtocol.h; sourceTree = "<group>"; };
+		BFBBB25220E39470004F192E /* Goods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Goods.h; sourceTree = "<group>"; };
+		BFBBB25320E39470004F192E /* Goods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Goods.m; sourceTree = "<group>"; };
+		BFBBB25620E397A4004F192E /* BuilderHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +247,14 @@
 		BFBBB23320E332AC004F192E /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				BFBBB25120E39414004F192E /* BuilderProtocol.h */,
+				BFBBB25220E39470004F192E /* Goods.h */,
+				BFBBB25320E39470004F192E /* Goods.m */,
+				BFBBB24B20E393A9004F192E /* Builder.h */,
+				BFBBB24C20E393A9004F192E /* Builder.m */,
+				BFBBB24E20E393EA004F192E /* Director.h */,
+				BFBBB24F20E393EA004F192E /* Director.m */,
+				BFBBB25620E397A4004F192E /* BuilderHeader.h */,
 			);
 			path = Builder;
 			sourceTree = "<group>";
@@ -373,7 +392,10 @@
 				BFBBB23020E1EDCB004F192E /* Sun.m in Sources */,
 				BFBBB22C20E1E21B004F192E /* People.m in Sources */,
 				BFBBB24620E38D16004F192E /* FactoryA.m in Sources */,
+				BFBBB24D20E393A9004F192E /* Builder.m in Sources */,
+				BFBBB25020E393EA004F192E /* Director.m in Sources */,
 				BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */,
+				BFBBB25420E39470004F192E /* Goods.m in Sources */,
 				BFBBB24920E38D4F004F192E /* FactoryB.m in Sources */,
 				BFBBB23620E3892A004F192E /* Product.m in Sources */,
 				BFBBB20420E1DD9B004F192E /* main.m in Sources */,

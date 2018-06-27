@@ -12,10 +12,12 @@
 #import "People.h"
 #import "Sun.h"
 #import "FactoryMethod.h"
+#import "BuilderHeader.h"
 
 void peopleInit(void);
 void sunInit (void);
 void factoryMethod (void);
+void builderInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -28,6 +30,9 @@ int main(int argc, char * argv[]) {
         
         // 工厂方法
         factoryMethod();
+        
+        // 建造者模式
+        builderInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -72,6 +77,14 @@ void factoryMethod (void) {
 }
 
 
+/**
+ 将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示
+ */
+void builderInit (void) {
+    Director *d = [[Director alloc] init];
+    d.builder = [[Builder alloc] init];
+    [d createGoods];
+}
 
 
 
