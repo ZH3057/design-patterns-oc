@@ -14,12 +14,14 @@
 #import "FactoryMethod.h"
 #import "BuilderHeader.h"
 #import "Adapter.h"
+#import "ImplementorSub.h"
 
 void peopleInit(void);
 void sunInit (void);
 void factoryMethod (void);
 void builderInit (void);
 void adapterInit(void);
+void bridgeInit(void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -38,6 +40,9 @@ int main(int argc, char * argv[]) {
         
         // 适配器模式
         adapterInit();
+        
+        // 桥接模式
+        bridgeInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -63,7 +68,7 @@ void peopleInit(void) {
  单例模式
  能够确保某个类在应用中只存在一个实例，创建之后会向整个系统共用这个实例
  */
-void sunInit (void) {
+void sunInit(void) {
     Sun *s = [Sun shareInstance];
     Sun *s1 = [s copy];
     Sun *s2 = [s mutableCopy];
@@ -75,7 +80,7 @@ void sunInit (void) {
 /**
  定义一个用于创建对象的接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到其子类
  */
-void factoryMethod (void) {
+void factoryMethod(void) {
     Product *a = [FactoryA createProduct];
     Product *b = [FactoryB createProduct];
     NSLog(@"a: %@, b: %@", a, b);
@@ -85,7 +90,7 @@ void factoryMethod (void) {
 /**
  将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示
  */
-void builderInit (void) {
+void builderInit(void) {
     Director *d = [[Director alloc] init];
     d.builder = [[Builder alloc] init];
     [d createGoods];
@@ -99,6 +104,17 @@ void builderInit (void) {
 void adapterInit(void) {
     Adapter *ad = [[Adapter alloc] init];
     [ad doAdapteeThings];
+}
+
+
+/**
+ 将抽象和实现解耦，使得两者可以独立地变化
+ */
+void bridgeInit(void) {
+    ImplementorSub *im = [[ImplementorSub alloc] init];
+    [im currentClass];
+    [im doSomething];
+    [im doAnything];
 }
 
 
