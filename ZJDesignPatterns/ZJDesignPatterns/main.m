@@ -13,11 +13,13 @@
 #import "Sun.h"
 #import "FactoryMethod.h"
 #import "BuilderHeader.h"
+#import "Adapter.h"
 
 void peopleInit(void);
 void sunInit (void);
 void factoryMethod (void);
 void builderInit (void);
+void adapterInit(void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -33,6 +35,9 @@ int main(int argc, char * argv[]) {
         
         // 建造者模式
         builderInit();
+        
+        // 适配器模式
+        adapterInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -86,6 +91,15 @@ void builderInit (void) {
     [d createGoods];
 }
 
+
+/**
+ 将一个类的接口变换成客户端所期待的另一种接口，从而使原本因接口不匹配而无法在一起工作的两个类能够在一起工作
+ 继承Target实现Adaptee接口
+ */
+void adapterInit(void) {
+    Adapter *ad = [[Adapter alloc] init];
+    [ad doAdapteeThings];
+}
 
 
 

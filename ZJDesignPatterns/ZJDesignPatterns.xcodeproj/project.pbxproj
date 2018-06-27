@@ -26,6 +26,9 @@
 		BFBBB24D20E393A9004F192E /* Builder.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB24C20E393A9004F192E /* Builder.m */; };
 		BFBBB25020E393EA004F192E /* Director.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB24F20E393EA004F192E /* Director.m */; };
 		BFBBB25420E39470004F192E /* Goods.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB25320E39470004F192E /* Goods.m */; };
+		BFBBB25A20E39B53004F192E /* Target.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB25920E39B53004F192E /* Target.m */; };
+		BFBBB25D20E39B6A004F192E /* Adaptee.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB25C20E39B6A004F192E /* Adaptee.m */; };
+		BFBBB26020E39BE7004F192E /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB25F20E39BE7004F192E /* Adapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +91,13 @@
 		BFBBB25220E39470004F192E /* Goods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Goods.h; sourceTree = "<group>"; };
 		BFBBB25320E39470004F192E /* Goods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Goods.m; sourceTree = "<group>"; };
 		BFBBB25620E397A4004F192E /* BuilderHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuilderHeader.h; sourceTree = "<group>"; };
+		BFBBB25820E39B53004F192E /* Target.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target.h; sourceTree = "<group>"; };
+		BFBBB25920E39B53004F192E /* Target.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target.m; sourceTree = "<group>"; };
+		BFBBB25B20E39B6A004F192E /* Adaptee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adaptee.h; sourceTree = "<group>"; };
+		BFBBB25C20E39B6A004F192E /* Adaptee.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adaptee.m; sourceTree = "<group>"; };
+		BFBBB25E20E39BE7004F192E /* Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
+		BFBBB25F20E39BE7004F192E /* Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adapter.m; sourceTree = "<group>"; };
+		BFBBB26120E39CD7004F192E /* AdapterProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdapterProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +153,7 @@
 				BFBBB23120E3328B004F192E /* FactoryMethod */,
 				BFBBB23220E3329D004F192E /* AbstractFactory */,
 				BFBBB23320E332AC004F192E /* Builder */,
+				BFBBB25720E39965004F192E /* Adapter */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -257,6 +268,20 @@
 				BFBBB25620E397A4004F192E /* BuilderHeader.h */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		BFBBB25720E39965004F192E /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBB25820E39B53004F192E /* Target.h */,
+				BFBBB25920E39B53004F192E /* Target.m */,
+				BFBBB26120E39CD7004F192E /* AdapterProtocol.h */,
+				BFBBB25B20E39B6A004F192E /* Adaptee.h */,
+				BFBBB25C20E39B6A004F192E /* Adaptee.m */,
+				BFBBB25E20E39BE7004F192E /* Adapter.h */,
+				BFBBB25F20E39BE7004F192E /* Adapter.m */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -394,10 +419,13 @@
 				BFBBB24620E38D16004F192E /* FactoryA.m in Sources */,
 				BFBBB24D20E393A9004F192E /* Builder.m in Sources */,
 				BFBBB25020E393EA004F192E /* Director.m in Sources */,
+				BFBBB25A20E39B53004F192E /* Target.m in Sources */,
 				BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */,
 				BFBBB25420E39470004F192E /* Goods.m in Sources */,
+				BFBBB25D20E39B6A004F192E /* Adaptee.m in Sources */,
 				BFBBB24920E38D4F004F192E /* FactoryB.m in Sources */,
 				BFBBB23620E3892A004F192E /* Product.m in Sources */,
+				BFBBB26020E39BE7004F192E /* Adapter.m in Sources */,
 				BFBBB20420E1DD9B004F192E /* main.m in Sources */,
 				BFBBB1F620E1DD99004F192E /* AppDelegate.m in Sources */,
 				BFBBB23D20E38B70004F192E /* Factory.m in Sources */,
