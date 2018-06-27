@@ -11,9 +11,11 @@
 
 #import "People.h"
 #import "Sun.h"
+#import "FactoryMethod.h"
 
 void peopleInit(void);
 void sunInit (void);
+void factoryMethod (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -23,6 +25,9 @@ int main(int argc, char * argv[]) {
         
         // 单例模式
         sunInit();
+        
+        // 工厂方法
+        factoryMethod();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -54,6 +59,16 @@ void sunInit (void) {
     Sun *s2 = [s mutableCopy];
     Sun *s3 = [s1 copy];
     NSLog(@"s: %p, s1: %p, s2: %p, s3: %p", s, s1, s2, s3);
+}
+
+
+/**
+ 定义一个用于创建对象的接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到其子类
+ */
+void factoryMethod (void) {
+    Product *a = [FactoryA createProduct];
+    Product *b = [FactoryB createProduct];
+    NSLog(@"a: %@, b: %@", a, b);
 }
 
 
