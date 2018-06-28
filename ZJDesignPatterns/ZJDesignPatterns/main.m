@@ -17,6 +17,7 @@
 #import "ImplementorSub.h"
 #import "Decorator.h"
 #import "CompositeHeader.h"
+#import "Facade.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -26,6 +27,7 @@ void adapterInit(void);
 void bridgeInit(void);
 void decoratorInit(void);
 void compositeInit (void);
+void facadeInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -53,6 +55,9 @@ int main(int argc, char * argv[]) {
         
         // 组合模式
         compositeInit();
+        
+        // 门面模式/外观模式
+        facadeInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -88,6 +93,7 @@ void sunInit(void) {
 
 
 /**
+ 工厂方法
  定义一个用于创建对象的接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到其子类
  */
 void factoryMethod(void) {
@@ -98,6 +104,7 @@ void factoryMethod(void) {
 
 
 /**
+ 建造者模式
  将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示
  */
 void builderInit(void) {
@@ -108,6 +115,7 @@ void builderInit(void) {
 
 
 /**
+ 适配器模式
  将一个类的接口变换成客户端所期待的另一种接口，从而使原本因接口不匹配而无法在一起工作的两个类能够在一起工作
  继承Target实现Adaptee接口
  */
@@ -118,6 +126,7 @@ void adapterInit(void) {
 
 
 /**
+ 桥接模式
  将抽象和实现解耦，使得两者可以独立地变化
  */
 void bridgeInit(void) {
@@ -129,6 +138,7 @@ void bridgeInit(void) {
 
 
 /**
+ 装饰器模式
  动态地给一个对象添加一些额外的职责。就增加功能来说，装饰模式相比生成子类更为灵活
  */
 void decoratorInit(void) {
@@ -141,6 +151,7 @@ void decoratorInit(void) {
 
 
 /**
+ 组合模式
  将对象组合成树形结构以表示“部分-整体”的层次结构，使得用户对单个对象和组合对象的使用具有一致性。
  */
 void compositeInit (void) {
@@ -151,6 +162,17 @@ void compositeInit (void) {
     [branch add:leaf];
     [Composite display:root];
     
+}
+
+
+/**
+ 门面模式/外观模式
+ 要求一个子系统的外部与其内部的通信必须通过一个统一的对象进行。门面模式提供一个高层次的接口，使得子系统更易于使用
+ */
+void facadeInit (void) {
+    Facade *f = [[Facade alloc] init];
+    [f moduleAOperate];
+    [f moduleBOperate];
 }
 
 

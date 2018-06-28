@@ -36,6 +36,9 @@
 		BFBBB27520E4D334004F192E /* Leaf.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB27420E4D334004F192E /* Leaf.m */; };
 		BFBBB27820E4D34A004F192E /* Composite.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB27720E4D34A004F192E /* Composite.m */; };
 		BFBBB27E20E4D588004F192E /* TreeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB27D20E4D588004F192E /* TreeItem.m */; };
+		BFBBB28420E4E49C004F192E /* Facade.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB28320E4E49C004F192E /* Facade.m */; };
+		BFBBB28720E4E4BD004F192E /* ModuleA.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB28620E4E4BD004F192E /* ModuleA.m */; };
+		BFBBB28A20E4E4CF004F192E /* ModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB28920E4E4CF004F192E /* ModuleB.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,6 +125,12 @@
 		BFBBB27C20E4D588004F192E /* TreeItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeItem.h; sourceTree = "<group>"; };
 		BFBBB27D20E4D588004F192E /* TreeItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeItem.m; sourceTree = "<group>"; };
 		BFBBB28020E4D7AE004F192E /* CompositeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompositeHeader.h; sourceTree = "<group>"; };
+		BFBBB28220E4E49C004F192E /* Facade.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Facade.h; sourceTree = "<group>"; };
+		BFBBB28320E4E49C004F192E /* Facade.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facade.m; sourceTree = "<group>"; };
+		BFBBB28520E4E4BD004F192E /* ModuleA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleA.h; sourceTree = "<group>"; };
+		BFBBB28620E4E4BD004F192E /* ModuleA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleA.m; sourceTree = "<group>"; };
+		BFBBB28820E4E4CF004F192E /* ModuleB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleB.h; sourceTree = "<group>"; };
+		BFBBB28920E4E4CF004F192E /* ModuleB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleB.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +190,7 @@
 				BFBBB26220E3A6B2004F192E /* Bridge */,
 				BFBBB26A20E4BBE7004F192E /* Decorator */,
 				BFBBB27220E4CDC2004F192E /* Composite */,
+				BFBBB28120E4E462004F192E /* Facade */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -349,6 +359,19 @@
 			path = Composite;
 			sourceTree = "<group>";
 		};
+		BFBBB28120E4E462004F192E /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBB28220E4E49C004F192E /* Facade.h */,
+				BFBBB28320E4E49C004F192E /* Facade.m */,
+				BFBBB28520E4E4BD004F192E /* ModuleA.h */,
+				BFBBB28620E4E4BD004F192E /* ModuleA.m */,
+				BFBBB28820E4E4CF004F192E /* ModuleB.h */,
+				BFBBB28920E4E4CF004F192E /* ModuleB.m */,
+			);
+			path = Facade;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -484,6 +507,7 @@
 				BFBBB22C20E1E21B004F192E /* People.m in Sources */,
 				BFBBB24620E38D16004F192E /* FactoryA.m in Sources */,
 				BFBBB24D20E393A9004F192E /* Builder.m in Sources */,
+				BFBBB28720E4E4BD004F192E /* ModuleA.m in Sources */,
 				BFBBB26620E3A77F004F192E /* Implementor.m in Sources */,
 				BFBBB25020E393EA004F192E /* Director.m in Sources */,
 				BFBBB25A20E39B53004F192E /* Target.m in Sources */,
@@ -496,6 +520,7 @@
 				BFBBB23620E3892A004F192E /* Product.m in Sources */,
 				BFBBB26020E39BE7004F192E /* Adapter.m in Sources */,
 				BFBBB20420E1DD9B004F192E /* main.m in Sources */,
+				BFBBB28A20E4E4CF004F192E /* ModuleB.m in Sources */,
 				BFBBB1F620E1DD99004F192E /* AppDelegate.m in Sources */,
 				BFBBB26920E3A837004F192E /* ImplementorSub.m in Sources */,
 				BFBBB23D20E38B70004F192E /* Factory.m in Sources */,
@@ -503,6 +528,7 @@
 				BFBBB24320E38D00004F192E /* ProductB.m in Sources */,
 				BFBBB24020E38CE0004F192E /* ProductA.m in Sources */,
 				BFBBB27520E4D334004F192E /* Leaf.m in Sources */,
+				BFBBB28420E4E49C004F192E /* Facade.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

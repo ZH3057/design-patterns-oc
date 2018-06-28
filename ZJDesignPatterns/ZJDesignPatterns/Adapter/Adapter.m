@@ -8,13 +8,27 @@
 
 #import "Adapter.h"
 
+@interface Adapter ()
+
+@property (nonatomic, strong) Adaptee *ad;
+
+@end
+
+
 @implementation Adapter
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        _ad = [[Adaptee alloc] init];
+    }
+    return self;
+}
 
 - (void)doAdapteeThings {
     [super doTargetThings];
     
-    Adaptee *ad = [[Adaptee alloc] init];
-    [ad doAdapteeThings];
+    [self.ad doAdapteeThings];
 }
 
 @end
