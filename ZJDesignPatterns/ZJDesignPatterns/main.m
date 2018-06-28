@@ -128,9 +128,9 @@ void bridgeInit(void) {
  */
 void decoratorInit(void) {
     Decorator *d = [[Decorator alloc] init];
-    d.component = [[Component alloc] init];
-    d.component.decorator = d;
-    [d.component operate];
+    Component *component = [[Component alloc] init];
+    component.decorator = d;
+    [component operate];
 }
 
 

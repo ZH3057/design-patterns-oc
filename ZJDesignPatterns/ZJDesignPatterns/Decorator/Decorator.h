@@ -11,6 +11,4 @@
 
 @interface Decorator : NSObject <ComponentDecorateProtocolDelegate>
 
-@property (nonatomic, strong) Component *component;
-
 @end
