@@ -16,6 +16,7 @@
 #import "Adapter.h"
 #import "ImplementorSub.h"
 #import "Decorator.h"
+#import "CompositeHeader.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -24,6 +25,7 @@ void builderInit (void);
 void adapterInit(void);
 void bridgeInit(void);
 void decoratorInit(void);
+void compositeInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -48,6 +50,9 @@ int main(int argc, char * argv[]) {
         
         // 装饰器模式
         decoratorInit();
+        
+        // 组合模式
+        compositeInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -133,6 +138,20 @@ void decoratorInit(void) {
     [component operate];
 }
 
+
+
+/**
+ 将对象组合成树形结构以表示“部分-整体”的层次结构，使得用户对单个对象和组合对象的使用具有一致性。
+ */
+void compositeInit (void) {
+    Composite *root = [[Composite alloc] init];
+    Composite *branch = [[Composite alloc] init];
+    Leaf *leaf = [[Leaf alloc] init];
+    [root add:branch];
+    [branch add:leaf];
+    [Composite display:root];
+    
+}
 
 
 

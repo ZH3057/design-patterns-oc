@@ -33,6 +33,9 @@
 		BFBBB26920E3A837004F192E /* ImplementorSub.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB26820E3A837004F192E /* ImplementorSub.m */; };
 		BFBBB26D20E4BC09004F192E /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB26C20E4BC09004F192E /* Component.m */; };
 		BFBBB27020E4BC45004F192E /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB26F20E4BC44004F192E /* Decorator.m */; };
+		BFBBB27520E4D334004F192E /* Leaf.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB27420E4D334004F192E /* Leaf.m */; };
+		BFBBB27820E4D34A004F192E /* Composite.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB27720E4D34A004F192E /* Composite.m */; };
+		BFBBB27E20E4D588004F192E /* TreeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB27D20E4D588004F192E /* TreeItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +115,13 @@
 		BFBBB26E20E4BC44004F192E /* Decorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decorator.h; sourceTree = "<group>"; };
 		BFBBB26F20E4BC44004F192E /* Decorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Decorator.m; sourceTree = "<group>"; };
 		BFBBB27120E4BCFD004F192E /* ComponentDecorateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentDecorateProtocol.h; sourceTree = "<group>"; };
+		BFBBB27320E4D334004F192E /* Leaf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Leaf.h; sourceTree = "<group>"; };
+		BFBBB27420E4D334004F192E /* Leaf.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Leaf.m; sourceTree = "<group>"; };
+		BFBBB27620E4D34A004F192E /* Composite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Composite.h; sourceTree = "<group>"; };
+		BFBBB27720E4D34A004F192E /* Composite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Composite.m; sourceTree = "<group>"; };
+		BFBBB27C20E4D588004F192E /* TreeItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TreeItem.h; sourceTree = "<group>"; };
+		BFBBB27D20E4D588004F192E /* TreeItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TreeItem.m; sourceTree = "<group>"; };
+		BFBBB28020E4D7AE004F192E /* CompositeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompositeHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +180,7 @@
 				BFBBB25720E39965004F192E /* Adapter */,
 				BFBBB26220E3A6B2004F192E /* Bridge */,
 				BFBBB26A20E4BBE7004F192E /* Decorator */,
+				BFBBB27220E4CDC2004F192E /* Composite */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -324,6 +335,20 @@
 			path = Decorator;
 			sourceTree = "<group>";
 		};
+		BFBBB27220E4CDC2004F192E /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBB27C20E4D588004F192E /* TreeItem.h */,
+				BFBBB27D20E4D588004F192E /* TreeItem.m */,
+				BFBBB27620E4D34A004F192E /* Composite.h */,
+				BFBBB27720E4D34A004F192E /* Composite.m */,
+				BFBBB27320E4D334004F192E /* Leaf.h */,
+				BFBBB27420E4D334004F192E /* Leaf.m */,
+				BFBBB28020E4D7AE004F192E /* CompositeHeader.h */,
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -466,6 +491,7 @@
 				BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */,
 				BFBBB25420E39470004F192E /* Goods.m in Sources */,
 				BFBBB25D20E39B6A004F192E /* Adaptee.m in Sources */,
+				BFBBB27E20E4D588004F192E /* TreeItem.m in Sources */,
 				BFBBB24920E38D4F004F192E /* FactoryB.m in Sources */,
 				BFBBB23620E3892A004F192E /* Product.m in Sources */,
 				BFBBB26020E39BE7004F192E /* Adapter.m in Sources */,
@@ -473,8 +499,10 @@
 				BFBBB1F620E1DD99004F192E /* AppDelegate.m in Sources */,
 				BFBBB26920E3A837004F192E /* ImplementorSub.m in Sources */,
 				BFBBB23D20E38B70004F192E /* Factory.m in Sources */,
+				BFBBB27820E4D34A004F192E /* Composite.m in Sources */,
 				BFBBB24320E38D00004F192E /* ProductB.m in Sources */,
 				BFBBB24020E38CE0004F192E /* ProductA.m in Sources */,
+				BFBBB27520E4D334004F192E /* Leaf.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
