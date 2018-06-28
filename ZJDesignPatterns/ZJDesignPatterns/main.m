@@ -15,6 +15,7 @@
 #import "BuilderHeader.h"
 #import "Adapter.h"
 #import "ImplementorSub.h"
+#import "Decorator.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -22,6 +23,7 @@ void factoryMethod (void);
 void builderInit (void);
 void adapterInit(void);
 void bridgeInit(void);
+void decoratorInit(void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -43,6 +45,9 @@ int main(int argc, char * argv[]) {
         
         // 桥接模式
         bridgeInit();
+        
+        // 装饰器模式
+        decoratorInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -115,6 +120,17 @@ void bridgeInit(void) {
     [im currentClass];
     [im doSomething];
     [im doAnything];
+}
+
+
+/**
+ 动态地给一个对象添加一些额外的职责。就增加功能来说，装饰模式相比生成子类更为灵活
+ */
+void decoratorInit(void) {
+    Decorator *d = [[Decorator alloc] init];
+    d.component = [[Component alloc] init];
+    d.component.decorator = d;
+    [d.component operate];
 }
 
 

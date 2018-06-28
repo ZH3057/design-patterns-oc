@@ -31,6 +31,8 @@
 		BFBBB26020E39BE7004F192E /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB25F20E39BE7004F192E /* Adapter.m */; };
 		BFBBB26620E3A77F004F192E /* Implementor.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB26520E3A77F004F192E /* Implementor.m */; };
 		BFBBB26920E3A837004F192E /* ImplementorSub.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB26820E3A837004F192E /* ImplementorSub.m */; };
+		BFBBB26D20E4BC09004F192E /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB26C20E4BC09004F192E /* Component.m */; };
+		BFBBB27020E4BC45004F192E /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB26F20E4BC44004F192E /* Decorator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +107,11 @@
 		BFBBB26520E3A77F004F192E /* Implementor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Implementor.m; sourceTree = "<group>"; };
 		BFBBB26720E3A837004F192E /* ImplementorSub.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImplementorSub.h; sourceTree = "<group>"; };
 		BFBBB26820E3A837004F192E /* ImplementorSub.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImplementorSub.m; sourceTree = "<group>"; };
+		BFBBB26B20E4BC09004F192E /* Component.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		BFBBB26C20E4BC09004F192E /* Component.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Component.m; sourceTree = "<group>"; };
+		BFBBB26E20E4BC44004F192E /* Decorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Decorator.h; sourceTree = "<group>"; };
+		BFBBB26F20E4BC44004F192E /* Decorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Decorator.m; sourceTree = "<group>"; };
+		BFBBB27120E4BCFD004F192E /* ComponentDecorateProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComponentDecorateProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +169,7 @@
 				BFBBB23320E332AC004F192E /* Builder */,
 				BFBBB25720E39965004F192E /* Adapter */,
 				BFBBB26220E3A6B2004F192E /* Bridge */,
+				BFBBB26A20E4BBE7004F192E /* Decorator */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -304,6 +312,18 @@
 			path = Bridge;
 			sourceTree = "<group>";
 		};
+		BFBBB26A20E4BBE7004F192E /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBB26B20E4BC09004F192E /* Component.h */,
+				BFBBB26C20E4BC09004F192E /* Component.m */,
+				BFBBB27120E4BCFD004F192E /* ComponentDecorateProtocol.h */,
+				BFBBB26E20E4BC44004F192E /* Decorator.h */,
+				BFBBB26F20E4BC44004F192E /* Decorator.m */,
+			);
+			path = Decorator;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -435,12 +455,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFBBB23020E1EDCB004F192E /* Sun.m in Sources */,
+				BFBBB26D20E4BC09004F192E /* Component.m in Sources */,
 				BFBBB22C20E1E21B004F192E /* People.m in Sources */,
 				BFBBB24620E38D16004F192E /* FactoryA.m in Sources */,
 				BFBBB24D20E393A9004F192E /* Builder.m in Sources */,
 				BFBBB26620E3A77F004F192E /* Implementor.m in Sources */,
 				BFBBB25020E393EA004F192E /* Director.m in Sources */,
 				BFBBB25A20E39B53004F192E /* Target.m in Sources */,
+				BFBBB27020E4BC45004F192E /* Decorator.m in Sources */,
 				BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */,
 				BFBBB25420E39470004F192E /* Goods.m in Sources */,
 				BFBBB25D20E39B6A004F192E /* Adaptee.m in Sources */,
