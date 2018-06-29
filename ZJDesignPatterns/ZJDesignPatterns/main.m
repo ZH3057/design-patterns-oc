@@ -19,6 +19,7 @@
 #import "CompositeHeader.h"
 #import "Facade.h"
 #import "FlyweightFactory.h"
+#import "Proxy.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -30,6 +31,7 @@ void decoratorInit(void);
 void compositeInit (void);
 void facadeInit (void);
 void flyweightInit (void);
+void proxyInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -63,6 +65,9 @@ int main(int argc, char * argv[]) {
         
         // 享元模式
         flyweightInit();
+        
+        // 代理模式
+        proxyInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -193,6 +198,16 @@ void flyweightInit (void) {
 }
 
 
+/**
+ 代理模式
+ 为其他对象提供一种代理以控制对这个对象的访问
+ */
+void proxyInit (void) {
+    Proxy *p = [[Proxy alloc] init];
+    Subject *s = [[Subject alloc] init];
+    s.delegate = p;
+    [s request];
+}
 
 
 

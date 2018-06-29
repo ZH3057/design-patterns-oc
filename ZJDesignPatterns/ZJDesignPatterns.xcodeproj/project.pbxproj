@@ -41,6 +41,8 @@
 		BFBBB28A20E4E4CF004F192E /* ModuleB.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB28920E4E4CF004F192E /* ModuleB.m */; };
 		BFBBB28F20E5D716004F192E /* Flyweight.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB28E20E5D716004F192E /* Flyweight.m */; };
 		BFBBB29220E5D731004F192E /* FlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB29120E5D731004F192E /* FlyweightFactory.m */; };
+		BFBBB29620E5E257004F192E /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB29520E5E257004F192E /* Subject.m */; };
+		BFBBB29920E5E280004F192E /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB29820E5E280004F192E /* Proxy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,10 @@
 		BFBBB28E20E5D716004F192E /* Flyweight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flyweight.m; sourceTree = "<group>"; };
 		BFBBB29020E5D731004F192E /* FlyweightFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlyweightFactory.h; sourceTree = "<group>"; };
 		BFBBB29120E5D731004F192E /* FlyweightFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlyweightFactory.m; sourceTree = "<group>"; };
+		BFBBB29420E5E257004F192E /* Subject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Subject.h; sourceTree = "<group>"; };
+		BFBBB29520E5E257004F192E /* Subject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
+		BFBBB29720E5E280004F192E /* Proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
+		BFBBB29820E5E280004F192E /* Proxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Proxy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +202,7 @@
 				BFBBB26220E3A6B2004F192E /* Bridge */,
 				BFBBB26A20E4BBE7004F192E /* Decorator */,
 				BFBBB27220E4CDC2004F192E /* Composite */,
+				BFBBB29320E5DDCA004F192E /* Proxy */,
 				BFBBB28120E4E462004F192E /* Facade */,
 				BFBBB28B20E4E76D004F192E /* Flyweight */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
@@ -390,6 +397,17 @@
 			path = Flyweight;
 			sourceTree = "<group>";
 		};
+		BFBBB29320E5DDCA004F192E /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBB29420E5E257004F192E /* Subject.h */,
+				BFBBB29520E5E257004F192E /* Subject.m */,
+				BFBBB29720E5E280004F192E /* Proxy.h */,
+				BFBBB29820E5E280004F192E /* Proxy.m */,
+			);
+			path = Proxy;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -528,6 +546,7 @@
 				BFBBB28F20E5D716004F192E /* Flyweight.m in Sources */,
 				BFBBB28720E4E4BD004F192E /* ModuleA.m in Sources */,
 				BFBBB26620E3A77F004F192E /* Implementor.m in Sources */,
+				BFBBB29620E5E257004F192E /* Subject.m in Sources */,
 				BFBBB25020E393EA004F192E /* Director.m in Sources */,
 				BFBBB25A20E39B53004F192E /* Target.m in Sources */,
 				BFBBB27020E4BC45004F192E /* Decorator.m in Sources */,
@@ -545,6 +564,7 @@
 				BFBBB26920E3A837004F192E /* ImplementorSub.m in Sources */,
 				BFBBB23D20E38B70004F192E /* Factory.m in Sources */,
 				BFBBB27820E4D34A004F192E /* Composite.m in Sources */,
+				BFBBB29920E5E280004F192E /* Proxy.m in Sources */,
 				BFBBB24320E38D00004F192E /* ProductB.m in Sources */,
 				BFBBB24020E38CE0004F192E /* ProductA.m in Sources */,
 				BFBBB27520E4D334004F192E /* Leaf.m in Sources */,
