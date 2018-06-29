@@ -18,6 +18,7 @@
 #import "Decorator.h"
 #import "CompositeHeader.h"
 #import "Facade.h"
+#import "FlyweightFactory.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -28,6 +29,7 @@ void bridgeInit(void);
 void decoratorInit(void);
 void compositeInit (void);
 void facadeInit (void);
+void flyweightInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -58,6 +60,9 @@ int main(int argc, char * argv[]) {
         
         // 门面模式/外观模式
         facadeInit();
+        
+        // 享元模式
+        flyweightInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -175,6 +180,17 @@ void facadeInit (void) {
     [f moduleBOperate];
 }
 
+
+/**
+ 享元模式
+ 使用共享对象可有效地支持大量的细粒度的对象
+ */
+void flyweightInit (void) {
+    FlyweightFactory *factory = [[FlyweightFactory alloc] init];
+    [factory getFlyweightWithExtrinsic:@"f1"];
+    [factory getFlyweightWithExtrinsic:@"f2"];
+    [factory getFlyweightWithExtrinsic:nil];
+}
 
 
 
