@@ -47,6 +47,9 @@
 		BFBBB2A020E62D49004F192E /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB29F20E62D49004F192E /* Response.m */; };
 		BFBBB2A320E62D8C004F192E /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB2A220E62D8C004F192E /* Level.m */; };
 		BFBBB2A620E62D9F004F192E /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB2A520E62D9F004F192E /* Request.m */; };
+		BFBBB2AA20E63ED4004F192E /* Receiver.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB2A920E63ED4004F192E /* Receiver.m */; };
+		BFBBB2AD20E63EE9004F192E /* Command.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB2AC20E63EE9004F192E /* Command.m */; };
+		BFBBB2B020E63F0C004F192E /* Invoker.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB2AF20E63F0B004F192E /* Invoker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +158,12 @@
 		BFBBB2A220E62D8C004F192E /* Level.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
 		BFBBB2A420E62D9F004F192E /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
 		BFBBB2A520E62D9F004F192E /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
+		BFBBB2A820E63ED4004F192E /* Receiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Receiver.h; sourceTree = "<group>"; };
+		BFBBB2A920E63ED4004F192E /* Receiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receiver.m; sourceTree = "<group>"; };
+		BFBBB2AB20E63EE9004F192E /* Command.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Command.h; sourceTree = "<group>"; };
+		BFBBB2AC20E63EE9004F192E /* Command.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Command.m; sourceTree = "<group>"; };
+		BFBBB2AE20E63F0B004F192E /* Invoker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Invoker.h; sourceTree = "<group>"; };
+		BFBBB2AF20E63F0B004F192E /* Invoker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Invoker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +227,7 @@
 				BFBBB28120E4E462004F192E /* Facade */,
 				BFBBB28B20E4E76D004F192E /* Flyweight */,
 				BFBBB29A20E62CE2004F192E /* ChainOfResponsibility */,
+				BFBBB2A720E63DE8004F192E /* Command */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -436,6 +446,19 @@
 			path = ChainOfResponsibility;
 			sourceTree = "<group>";
 		};
+		BFBBB2A720E63DE8004F192E /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBB2A820E63ED4004F192E /* Receiver.h */,
+				BFBBB2A920E63ED4004F192E /* Receiver.m */,
+				BFBBB2AB20E63EE9004F192E /* Command.h */,
+				BFBBB2AC20E63EE9004F192E /* Command.m */,
+				BFBBB2AE20E63F0B004F192E /* Invoker.h */,
+				BFBBB2AF20E63F0B004F192E /* Invoker.m */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -568,6 +591,7 @@
 			files = (
 				BFBBB23020E1EDCB004F192E /* Sun.m in Sources */,
 				BFBBB26D20E4BC09004F192E /* Component.m in Sources */,
+				BFBBB2B020E63F0C004F192E /* Invoker.m in Sources */,
 				BFBBB29D20E62CFE004F192E /* Handler.m in Sources */,
 				BFBBB22C20E1E21B004F192E /* People.m in Sources */,
 				BFBBB24620E38D16004F192E /* FactoryA.m in Sources */,
@@ -580,6 +604,7 @@
 				BFBBB25020E393EA004F192E /* Director.m in Sources */,
 				BFBBB25A20E39B53004F192E /* Target.m in Sources */,
 				BFBBB2A320E62D8C004F192E /* Level.m in Sources */,
+				BFBBB2AA20E63ED4004F192E /* Receiver.m in Sources */,
 				BFBBB2A020E62D49004F192E /* Response.m in Sources */,
 				BFBBB27020E4BC45004F192E /* Decorator.m in Sources */,
 				BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */,
@@ -598,6 +623,7 @@
 				BFBBB27820E4D34A004F192E /* Composite.m in Sources */,
 				BFBBB29920E5E280004F192E /* Proxy.m in Sources */,
 				BFBBB24320E38D00004F192E /* ProductB.m in Sources */,
+				BFBBB2AD20E63EE9004F192E /* Command.m in Sources */,
 				BFBBB24020E38CE0004F192E /* ProductA.m in Sources */,
 				BFBBB27520E4D334004F192E /* Leaf.m in Sources */,
 				BFBBB28420E4E49C004F192E /* Facade.m in Sources */,

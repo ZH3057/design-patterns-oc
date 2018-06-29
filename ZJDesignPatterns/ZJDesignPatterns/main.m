@@ -21,6 +21,7 @@
 #import "FlyweightFactory.h"
 #import "Proxy.h"
 #import "Handler.h"
+#import "Invoker.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -34,6 +35,7 @@ void facadeInit (void);
 void flyweightInit (void);
 void proxyInit (void);
 void chainOfResponsibilityInit (void);
+void commandInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -73,6 +75,9 @@ int main(int argc, char * argv[]) {
         
         // 责任链模式
         chainOfResponsibilityInit();
+        
+        // 命令模式
+        commandInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -230,6 +235,16 @@ void chainOfResponsibilityInit(void) {
 }
 
 
+/**
+ 命令模式
+ 将一个请求封装成一个对象，从而让你使用不同的请求把客户端参数化，对请求排队或者记录请求日志，可以提供命令的撤销和恢复功能
+ */
+void commandInit (void) {
+    Receiver *r = [[Receiver alloc] init];
+    Command *c = [[Command alloc] initWithReceiver:r];
+    Invoker *i = [[Invoker alloc] initWithCommond:c];
+    [i action];
+}
 
 
 
