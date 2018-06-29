@@ -20,6 +20,7 @@
 #import "Facade.h"
 #import "FlyweightFactory.h"
 #import "Proxy.h"
+#import "Handler.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -32,6 +33,7 @@ void compositeInit (void);
 void facadeInit (void);
 void flyweightInit (void);
 void proxyInit (void);
+void chainOfResponsibilityInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -68,6 +70,9 @@ int main(int argc, char * argv[]) {
         
         // 代理模式
         proxyInit();
+        
+        // 责任链模式
+        chainOfResponsibilityInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -209,6 +214,20 @@ void proxyInit (void) {
     [s request];
 }
 
+/**
+ 责任链模式
+ 使多个对象都有机会处理请求，从而避免了请求的发送者和接受者之间的耦合关系。
+ 将这些对象连成一条链，并沿着这条链传递该请求，直到有对象处理它为止
+ */
+void chainOfResponsibilityInit(void) {
+    Handler *h1 = [[Handler alloc] initWithLevelNum:1];
+    Handler *h2 = [[Handler alloc] initWithLevelNum:2];
+    Handler *h3 = [[Handler alloc] initWithLevelNum:3];
+    [h1 setNext:h2];
+    [h2 setNext:h3];
+    Request *request = [[Request alloc] initWithLevelNum:2];
+    [h1 handleMessage:request];
+}
 
 
 

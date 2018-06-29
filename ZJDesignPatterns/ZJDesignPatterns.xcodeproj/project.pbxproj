@@ -43,6 +43,10 @@
 		BFBBB29220E5D731004F192E /* FlyweightFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB29120E5D731004F192E /* FlyweightFactory.m */; };
 		BFBBB29620E5E257004F192E /* Subject.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB29520E5E257004F192E /* Subject.m */; };
 		BFBBB29920E5E280004F192E /* Proxy.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB29820E5E280004F192E /* Proxy.m */; };
+		BFBBB29D20E62CFE004F192E /* Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB29C20E62CFE004F192E /* Handler.m */; };
+		BFBBB2A020E62D49004F192E /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB29F20E62D49004F192E /* Response.m */; };
+		BFBBB2A320E62D8C004F192E /* Level.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB2A220E62D8C004F192E /* Level.m */; };
+		BFBBB2A620E62D9F004F192E /* Request.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB2A520E62D9F004F192E /* Request.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +147,14 @@
 		BFBBB29520E5E257004F192E /* Subject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Subject.m; sourceTree = "<group>"; };
 		BFBBB29720E5E280004F192E /* Proxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Proxy.h; sourceTree = "<group>"; };
 		BFBBB29820E5E280004F192E /* Proxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Proxy.m; sourceTree = "<group>"; };
+		BFBBB29B20E62CFE004F192E /* Handler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Handler.h; sourceTree = "<group>"; };
+		BFBBB29C20E62CFE004F192E /* Handler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Handler.m; sourceTree = "<group>"; };
+		BFBBB29E20E62D49004F192E /* Response.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Response.h; sourceTree = "<group>"; };
+		BFBBB29F20E62D49004F192E /* Response.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
+		BFBBB2A120E62D8C004F192E /* Level.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Level.h; sourceTree = "<group>"; };
+		BFBBB2A220E62D8C004F192E /* Level.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Level.m; sourceTree = "<group>"; };
+		BFBBB2A420E62D9F004F192E /* Request.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Request.h; sourceTree = "<group>"; };
+		BFBBB2A520E62D9F004F192E /* Request.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Request.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +217,7 @@
 				BFBBB29320E5DDCA004F192E /* Proxy */,
 				BFBBB28120E4E462004F192E /* Facade */,
 				BFBBB28B20E4E76D004F192E /* Flyweight */,
+				BFBBB29A20E62CE2004F192E /* ChainOfResponsibility */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -408,6 +421,21 @@
 			path = Proxy;
 			sourceTree = "<group>";
 		};
+		BFBBB29A20E62CE2004F192E /* ChainOfResponsibility */ = {
+			isa = PBXGroup;
+			children = (
+				BFBBB29B20E62CFE004F192E /* Handler.h */,
+				BFBBB29C20E62CFE004F192E /* Handler.m */,
+				BFBBB29E20E62D49004F192E /* Response.h */,
+				BFBBB29F20E62D49004F192E /* Response.m */,
+				BFBBB2A120E62D8C004F192E /* Level.h */,
+				BFBBB2A220E62D8C004F192E /* Level.m */,
+				BFBBB2A420E62D9F004F192E /* Request.h */,
+				BFBBB2A520E62D9F004F192E /* Request.m */,
+			);
+			path = ChainOfResponsibility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -540,15 +568,19 @@
 			files = (
 				BFBBB23020E1EDCB004F192E /* Sun.m in Sources */,
 				BFBBB26D20E4BC09004F192E /* Component.m in Sources */,
+				BFBBB29D20E62CFE004F192E /* Handler.m in Sources */,
 				BFBBB22C20E1E21B004F192E /* People.m in Sources */,
 				BFBBB24620E38D16004F192E /* FactoryA.m in Sources */,
 				BFBBB24D20E393A9004F192E /* Builder.m in Sources */,
+				BFBBB2A620E62D9F004F192E /* Request.m in Sources */,
 				BFBBB28F20E5D716004F192E /* Flyweight.m in Sources */,
 				BFBBB28720E4E4BD004F192E /* ModuleA.m in Sources */,
 				BFBBB26620E3A77F004F192E /* Implementor.m in Sources */,
 				BFBBB29620E5E257004F192E /* Subject.m in Sources */,
 				BFBBB25020E393EA004F192E /* Director.m in Sources */,
 				BFBBB25A20E39B53004F192E /* Target.m in Sources */,
+				BFBBB2A320E62D8C004F192E /* Level.m in Sources */,
+				BFBBB2A020E62D49004F192E /* Response.m in Sources */,
 				BFBBB27020E4BC45004F192E /* Decorator.m in Sources */,
 				BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */,
 				BFBBB25420E39470004F192E /* Goods.m in Sources */,
