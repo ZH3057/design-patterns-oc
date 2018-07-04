@@ -228,6 +228,7 @@
 				BFBBB28B20E4E76D004F192E /* Flyweight */,
 				BFBBB29A20E62CE2004F192E /* ChainOfResponsibility */,
 				BFBBB2A720E63DE8004F192E /* Command */,
+				BFBBB2B120E6435E004F192E /* Mediator */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -457,6 +458,13 @@
 				BFBBB2AF20E63F0B004F192E /* Invoker.m */,
 			);
 			path = Command;
+			sourceTree = "<group>";
+		};
+		BFBBB2B120E6435E004F192E /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mediator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
