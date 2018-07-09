@@ -14,6 +14,6 @@
 
 - (instancetype)initWithConcreteStrategy:(ConcreteStrategy *)strategy;
 
-- (void)doSomething;
+- (void)doAnythinig;
 
 @end

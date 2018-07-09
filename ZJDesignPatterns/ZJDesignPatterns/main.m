@@ -316,7 +316,7 @@ void mementoInit (void) {
 void strategyInit (void) {
     ConcreteStrategy *strategy = [[ConcreteStrategy alloc] init];
     Context *c = [[Context alloc] initWithConcreteStrategy:strategy];
-    [c doSomething];
+    [c doAnythinig];
 }
 
 
