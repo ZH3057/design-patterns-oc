@@ -15,6 +15,8 @@
 		BF62CC4C20F3519700EA68CF /* Memento.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC4B20F3519700EA68CF /* Memento.m */; };
 		BF62CC4F20F352F200EA68CF /* Originator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC4E20F352F200EA68CF /* Originator.m */; };
 		BF62CC5220F3530500EA68CF /* Caretaker.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC5120F3530500EA68CF /* Caretaker.m */; };
+		BF62CC5720F3637C00EA68CF /* ConcreteStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC5620F3637C00EA68CF /* ConcreteStrategy.m */; };
+		BF62CC5A20F363D100EA68CF /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC5920F363D100EA68CF /* Context.m */; };
 		BFBBB1F620E1DD99004F192E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB1F520E1DD99004F192E /* AppDelegate.m */; };
 		BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB1F820E1DD99004F192E /* ViewController.m */; };
 		BFBBB1FC20E1DD99004F192E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBB1FA20E1DD99004F192E /* Main.storyboard */; };
@@ -94,6 +96,11 @@
 		BF62CC4E20F352F200EA68CF /* Originator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Originator.m; sourceTree = "<group>"; };
 		BF62CC5020F3530500EA68CF /* Caretaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Caretaker.h; sourceTree = "<group>"; };
 		BF62CC5120F3530500EA68CF /* Caretaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caretaker.m; sourceTree = "<group>"; };
+		BF62CC5420F35F1B00EA68CF /* StrategyProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrategyProtocol.h; sourceTree = "<group>"; };
+		BF62CC5520F3637C00EA68CF /* ConcreteStrategy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteStrategy.h; sourceTree = "<group>"; };
+		BF62CC5620F3637C00EA68CF /* ConcreteStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteStrategy.m; sourceTree = "<group>"; };
+		BF62CC5820F363D100EA68CF /* Context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
+		BF62CC5920F363D100EA68CF /* Context.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
 		BFBBB1F120E1DD99004F192E /* ZJDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBBB1F420E1DD99004F192E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFBBB1F520E1DD99004F192E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -252,6 +259,18 @@
 			path = Memento;
 			sourceTree = "<group>";
 		};
+		BF62CC5320F35E6C00EA68CF /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				BF62CC5420F35F1B00EA68CF /* StrategyProtocol.h */,
+				BF62CC5520F3637C00EA68CF /* ConcreteStrategy.h */,
+				BF62CC5620F3637C00EA68CF /* ConcreteStrategy.m */,
+				BF62CC5820F363D100EA68CF /* Context.h */,
+				BF62CC5920F363D100EA68CF /* Context.m */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
 		BFBBB1E820E1DD99004F192E = {
 			isa = PBXGroup;
 			children = (
@@ -292,6 +311,7 @@
 				BF62CC3720F336B000EA68CF /* Mediator */,
 				BF62CC4120F340CE00EA68CF /* Observer */,
 				BF62CC4920F3518300EA68CF /* Memento */,
+				BF62CC5320F35E6C00EA68CF /* Strategy */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -678,6 +698,7 @@
 				BF62CC5220F3530500EA68CF /* Caretaker.m in Sources */,
 				BFBBB25420E39470004F192E /* Goods.m in Sources */,
 				BF62CC4020F339B700EA68CF /* Manager.m in Sources */,
+				BF62CC5A20F363D100EA68CF /* Context.m in Sources */,
 				BFBBB25D20E39B6A004F192E /* Adaptee.m in Sources */,
 				BFBBB29220E5D731004F192E /* FlyweightFactory.m in Sources */,
 				BFBBB27E20E4D588004F192E /* TreeItem.m in Sources */,
@@ -693,6 +714,7 @@
 				BFBBB23D20E38B70004F192E /* Factory.m in Sources */,
 				BFBBB27820E4D34A004F192E /* Composite.m in Sources */,
 				BFBBB29920E5E280004F192E /* Proxy.m in Sources */,
+				BF62CC5720F3637C00EA68CF /* ConcreteStrategy.m in Sources */,
 				BFBBB24320E38D00004F192E /* ProductB.m in Sources */,
 				BFBBB2AD20E63EE9004F192E /* Command.m in Sources */,
 				BFBBB24020E38CE0004F192E /* ProductA.m in Sources */,

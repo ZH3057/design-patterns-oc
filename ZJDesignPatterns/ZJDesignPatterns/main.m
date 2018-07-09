@@ -25,6 +25,7 @@
 #import "Mediator.h"
 #import "ObserverCenter.h"
 #import "Originator.h"
+#import "Context.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -42,6 +43,7 @@ void commandInit (void);
 void mediatorInit (void);
 void observerInit (void);
 void mementoInit (void);
+void strategyInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -93,6 +95,9 @@ int main(int argc, char * argv[]) {
         
         // 备忘录模式
         mementoInit();
+        
+        // 策略模式
+        strategyInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -303,5 +308,15 @@ void mementoInit (void) {
     [o restoreMemento:c.memento];
 }
 
+
+
+/**
+ 定义一组算法，将每个算法都封装起来，并且使它们之间可以互换
+ */
+void strategyInit (void) {
+    ConcreteStrategy *strategy = [[ConcreteStrategy alloc] init];
+    Context *c = [[Context alloc] initWithConcreteStrategy:strategy];
+    [c doSomething];
+}
 
 
