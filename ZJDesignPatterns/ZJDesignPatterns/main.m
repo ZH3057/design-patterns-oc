@@ -23,6 +23,7 @@
 #import "Handler.h"
 #import "Invoker.h"
 #import "Mediator.h"
+#import "ObserverCenter.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -38,6 +39,7 @@ void proxyInit (void);
 void chainOfResponsibilityInit (void);
 void commandInit (void);
 void mediatorInit (void);
+void observerInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -83,6 +85,9 @@ int main(int argc, char * argv[]) {
         
         // 中介者模式
         mediatorInit();
+        
+        // 观察者模式
+        observerInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -266,6 +271,14 @@ void mediatorInit (void) {
     
     [c depMethod];
     [mrg depMethod];
+}
+
+void observerInit (void) {
+    ObserverCenter *center = [[ObserverCenter alloc] init];
+    Observer *o = [[Observer alloc] init];
+    [center addObserver:o];
+    [center notifyObservers];
+    [center removeObserver:o];
 }
 
 
