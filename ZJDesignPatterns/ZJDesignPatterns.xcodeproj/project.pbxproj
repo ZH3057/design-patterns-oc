@@ -12,6 +12,9 @@
 		BF62CC4020F339B700EA68CF /* Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC3F20F339B700EA68CF /* Manager.m */; };
 		BF62CC4420F341E700EA68CF /* ObserverCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC4320F341E700EA68CF /* ObserverCenter.m */; };
 		BF62CC4820F341FD00EA68CF /* Observer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC4720F341FD00EA68CF /* Observer.m */; };
+		BF62CC4C20F3519700EA68CF /* Memento.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC4B20F3519700EA68CF /* Memento.m */; };
+		BF62CC4F20F352F200EA68CF /* Originator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC4E20F352F200EA68CF /* Originator.m */; };
+		BF62CC5220F3530500EA68CF /* Caretaker.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC5120F3530500EA68CF /* Caretaker.m */; };
 		BFBBB1F620E1DD99004F192E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB1F520E1DD99004F192E /* AppDelegate.m */; };
 		BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB1F820E1DD99004F192E /* ViewController.m */; };
 		BFBBB1FC20E1DD99004F192E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBB1FA20E1DD99004F192E /* Main.storyboard */; };
@@ -85,6 +88,12 @@
 		BF62CC4320F341E700EA68CF /* ObserverCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObserverCenter.m; sourceTree = "<group>"; };
 		BF62CC4620F341FD00EA68CF /* Observer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Observer.h; sourceTree = "<group>"; };
 		BF62CC4720F341FD00EA68CF /* Observer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Observer.m; sourceTree = "<group>"; };
+		BF62CC4A20F3519700EA68CF /* Memento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Memento.h; sourceTree = "<group>"; };
+		BF62CC4B20F3519700EA68CF /* Memento.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Memento.m; sourceTree = "<group>"; };
+		BF62CC4D20F352F200EA68CF /* Originator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Originator.h; sourceTree = "<group>"; };
+		BF62CC4E20F352F200EA68CF /* Originator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Originator.m; sourceTree = "<group>"; };
+		BF62CC5020F3530500EA68CF /* Caretaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Caretaker.h; sourceTree = "<group>"; };
+		BF62CC5120F3530500EA68CF /* Caretaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Caretaker.m; sourceTree = "<group>"; };
 		BFBBB1F120E1DD99004F192E /* ZJDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBBB1F420E1DD99004F192E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFBBB1F520E1DD99004F192E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -230,6 +239,19 @@
 			path = Observer;
 			sourceTree = "<group>";
 		};
+		BF62CC4920F3518300EA68CF /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+				BF62CC4D20F352F200EA68CF /* Originator.h */,
+				BF62CC4E20F352F200EA68CF /* Originator.m */,
+				BF62CC4A20F3519700EA68CF /* Memento.h */,
+				BF62CC4B20F3519700EA68CF /* Memento.m */,
+				BF62CC5020F3530500EA68CF /* Caretaker.h */,
+				BF62CC5120F3530500EA68CF /* Caretaker.m */,
+			);
+			path = Memento;
+			sourceTree = "<group>";
+		};
 		BFBBB1E820E1DD99004F192E = {
 			isa = PBXGroup;
 			children = (
@@ -269,6 +291,7 @@
 				BFBBB2A720E63DE8004F192E /* Command */,
 				BF62CC3720F336B000EA68CF /* Mediator */,
 				BF62CC4120F340CE00EA68CF /* Observer */,
+				BF62CC4920F3518300EA68CF /* Memento */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -635,6 +658,7 @@
 				BFBBB2B020E63F0C004F192E /* Invoker.m in Sources */,
 				BFBBB29D20E62CFE004F192E /* Handler.m in Sources */,
 				BFBBB22C20E1E21B004F192E /* People.m in Sources */,
+				BF62CC4F20F352F200EA68CF /* Originator.m in Sources */,
 				BFBBB24620E38D16004F192E /* FactoryA.m in Sources */,
 				BFBBB24D20E393A9004F192E /* Builder.m in Sources */,
 				BF62CC3D20F3385800EA68CF /* Colleague.m in Sources */,
@@ -651,6 +675,7 @@
 				BFBBB2A020E62D49004F192E /* Response.m in Sources */,
 				BFBBB27020E4BC45004F192E /* Decorator.m in Sources */,
 				BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */,
+				BF62CC5220F3530500EA68CF /* Caretaker.m in Sources */,
 				BFBBB25420E39470004F192E /* Goods.m in Sources */,
 				BF62CC4020F339B700EA68CF /* Manager.m in Sources */,
 				BFBBB25D20E39B6A004F192E /* Adaptee.m in Sources */,
@@ -659,6 +684,7 @@
 				BFBBB24920E38D4F004F192E /* FactoryB.m in Sources */,
 				BFBBB23620E3892A004F192E /* Product.m in Sources */,
 				BFBBB26020E39BE7004F192E /* Adapter.m in Sources */,
+				BF62CC4C20F3519700EA68CF /* Memento.m in Sources */,
 				BFBBB20420E1DD9B004F192E /* main.m in Sources */,
 				BFBBB28A20E4E4CF004F192E /* ModuleB.m in Sources */,
 				BFBBB1F620E1DD99004F192E /* AppDelegate.m in Sources */,

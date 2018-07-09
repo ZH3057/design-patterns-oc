@@ -24,6 +24,7 @@
 #import "Invoker.h"
 #import "Mediator.h"
 #import "ObserverCenter.h"
+#import "Originator.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -40,6 +41,7 @@ void chainOfResponsibilityInit (void);
 void commandInit (void);
 void mediatorInit (void);
 void observerInit (void);
+void mementoInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -88,6 +90,9 @@ int main(int argc, char * argv[]) {
         
         // 观察者模式
         observerInit();
+        
+        // 备忘录模式
+        mementoInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -273,12 +278,29 @@ void mediatorInit (void) {
     [mrg depMethod];
 }
 
+
+/**
+ 定义对象间一种一对多的依赖关系，使得每当一个对象改变状态，则所有依赖于它的对象都会得到通知并被自动更新
+ */
 void observerInit (void) {
     ObserverCenter *center = [[ObserverCenter alloc] init];
     Observer *o = [[Observer alloc] init];
     [center addObserver:o];
     [center notifyObservers];
     [center removeObserver:o];
+}
+
+
+/**
+ 在不破坏封装性的前提下，捕获一个对象的内部状态，并在该对象之外保存这个状态
+ 这样以后就可将该对象恢复到原先保存的状态
+ */
+void mementoInit (void) {
+    Originator *o = [[Originator alloc] init];
+    [o set_state:1];
+    Caretaker *c = [[Caretaker alloc] init];
+    c.memento = [o createMemento];
+    [o restoreMemento:c.memento];
 }
 
 
