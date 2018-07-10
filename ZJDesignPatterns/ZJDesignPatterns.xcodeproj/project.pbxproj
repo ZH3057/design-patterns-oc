@@ -20,6 +20,7 @@
 		BF62CC5E20F366A100EA68CF /* Visitor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC5D20F366A100EA68CF /* Visitor.m */; };
 		BF62CC6120F366AF00EA68CF /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC6020F366AF00EA68CF /* Element.m */; };
 		BF62CC6420F366C600EA68CF /* ObjectStruture.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC6320F366C600EA68CF /* ObjectStruture.m */; };
+		BF62CC6920F45EA000EA68CF /* ConcreteClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC6820F45EA000EA68CF /* ConcreteClass.m */; };
 		BFBBB1F620E1DD99004F192E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB1F520E1DD99004F192E /* AppDelegate.m */; };
 		BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB1F820E1DD99004F192E /* ViewController.m */; };
 		BFBBB1FC20E1DD99004F192E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBB1FA20E1DD99004F192E /* Main.storyboard */; };
@@ -110,6 +111,9 @@
 		BF62CC6020F366AF00EA68CF /* Element.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Element.m; sourceTree = "<group>"; };
 		BF62CC6220F366C600EA68CF /* ObjectStruture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectStruture.h; sourceTree = "<group>"; };
 		BF62CC6320F366C600EA68CF /* ObjectStruture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectStruture.m; sourceTree = "<group>"; };
+		BF62CC6620F45C6C00EA68CF /* AbstractClassProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractClassProtocol.h; sourceTree = "<group>"; };
+		BF62CC6720F45EA000EA68CF /* ConcreteClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteClass.h; sourceTree = "<group>"; };
+		BF62CC6820F45EA000EA68CF /* ConcreteClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteClass.m; sourceTree = "<group>"; };
 		BFBBB1F120E1DD99004F192E /* ZJDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBBB1F420E1DD99004F192E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFBBB1F520E1DD99004F192E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -293,6 +297,16 @@
 			path = Visitor;
 			sourceTree = "<group>";
 		};
+		BF62CC6520F457CD00EA68CF /* TemplateMethod */ = {
+			isa = PBXGroup;
+			children = (
+				BF62CC6620F45C6C00EA68CF /* AbstractClassProtocol.h */,
+				BF62CC6720F45EA000EA68CF /* ConcreteClass.h */,
+				BF62CC6820F45EA000EA68CF /* ConcreteClass.m */,
+			);
+			path = TemplateMethod;
+			sourceTree = "<group>";
+		};
 		BFBBB1E820E1DD99004F192E = {
 			isa = PBXGroup;
 			children = (
@@ -335,6 +349,7 @@
 				BF62CC4920F3518300EA68CF /* Memento */,
 				BF62CC5320F35E6C00EA68CF /* Strategy */,
 				BF62CC5B20F3662A00EA68CF /* Visitor */,
+				BF62CC6520F457CD00EA68CF /* TemplateMethod */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -727,6 +742,7 @@
 				BF62CC5A20F363D100EA68CF /* Context.m in Sources */,
 				BFBBB25D20E39B6A004F192E /* Adaptee.m in Sources */,
 				BFBBB29220E5D731004F192E /* FlyweightFactory.m in Sources */,
+				BF62CC6920F45EA000EA68CF /* ConcreteClass.m in Sources */,
 				BFBBB27E20E4D588004F192E /* TreeItem.m in Sources */,
 				BFBBB24920E38D4F004F192E /* FactoryB.m in Sources */,
 				BFBBB23620E3892A004F192E /* Product.m in Sources */,

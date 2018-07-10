@@ -28,6 +28,7 @@
 #import "Context.h"
 #import "Visitor.h"
 #import "Element.h"
+#import "ConcreteClass.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -47,6 +48,7 @@ void observerInit (void);
 void mementoInit (void);
 void strategyInit (void);
 void visitorInit (void);
+void templateMethodInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -104,6 +106,9 @@ int main(int argc, char * argv[]) {
         
         // 访问者模式
         visitorInit();
+        
+        // 模板方法模式
+        templateMethodInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -334,6 +339,16 @@ void visitorInit (void) {
     Element *e = [[Element alloc] init];
     Visitor *v = [[Visitor alloc] init];
     [e accept:v];
+}
+
+
+/**
+ 定义一个操作中的算法的框架，而将一些步骤延迟到子类中
+ 使得子类可以不改变一个算法的结构即可重定义该算法的某些特定步骤
+ */
+void templateMethodInit (void) {
+    ConcreteClass *c = [[ConcreteClass alloc] init];
+    [c templateMethod];
 }
 
 
