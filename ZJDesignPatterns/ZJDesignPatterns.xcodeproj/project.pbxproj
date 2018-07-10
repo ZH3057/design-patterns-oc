@@ -21,6 +21,9 @@
 		BF62CC6120F366AF00EA68CF /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC6020F366AF00EA68CF /* Element.m */; };
 		BF62CC6420F366C600EA68CF /* ObjectStruture.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC6320F366C600EA68CF /* ObjectStruture.m */; };
 		BF62CC6920F45EA000EA68CF /* ConcreteClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC6820F45EA000EA68CF /* ConcreteClass.m */; };
+		BF62CC7420F498C700EA68CF /* State.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC7320F498C700EA68CF /* State.m */; };
+		BF62CC7720F49D3A00EA68CF /* Iterator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC7620F49D3A00EA68CF /* Iterator.m */; };
+		BF62CC7B20F49D5900EA68CF /* Interpreter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC7A20F49D5900EA68CF /* Interpreter.m */; };
 		BFBBB1F620E1DD99004F192E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB1F520E1DD99004F192E /* AppDelegate.m */; };
 		BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB1F820E1DD99004F192E /* ViewController.m */; };
 		BFBBB1FC20E1DD99004F192E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBB1FA20E1DD99004F192E /* Main.storyboard */; };
@@ -114,6 +117,12 @@
 		BF62CC6620F45C6C00EA68CF /* AbstractClassProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractClassProtocol.h; sourceTree = "<group>"; };
 		BF62CC6720F45EA000EA68CF /* ConcreteClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ConcreteClass.h; sourceTree = "<group>"; };
 		BF62CC6820F45EA000EA68CF /* ConcreteClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteClass.m; sourceTree = "<group>"; };
+		BF62CC7220F498C700EA68CF /* State.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		BF62CC7320F498C700EA68CF /* State.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = State.m; sourceTree = "<group>"; };
+		BF62CC7520F49D3A00EA68CF /* Iterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Iterator.h; sourceTree = "<group>"; };
+		BF62CC7620F49D3A00EA68CF /* Iterator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Iterator.m; sourceTree = "<group>"; };
+		BF62CC7920F49D5900EA68CF /* Interpreter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interpreter.h; sourceTree = "<group>"; };
+		BF62CC7A20F49D5900EA68CF /* Interpreter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Interpreter.m; sourceTree = "<group>"; };
 		BFBBB1F120E1DD99004F192E /* ZJDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBBB1F420E1DD99004F192E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFBBB1F520E1DD99004F192E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -307,6 +316,33 @@
 			path = TemplateMethod;
 			sourceTree = "<group>";
 		};
+		BF62CC6A20F461A900EA68CF /* State */ = {
+			isa = PBXGroup;
+			children = (
+				BF62CC7220F498C700EA68CF /* State.h */,
+				BF62CC7320F498C700EA68CF /* State.m */,
+			);
+			path = State;
+			sourceTree = "<group>";
+		};
+		BF62CC7120F498B700EA68CF /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				BF62CC7520F49D3A00EA68CF /* Iterator.h */,
+				BF62CC7620F49D3A00EA68CF /* Iterator.m */,
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
+		BF62CC7820F49D4F00EA68CF /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				BF62CC7920F49D5900EA68CF /* Interpreter.h */,
+				BF62CC7A20F49D5900EA68CF /* Interpreter.m */,
+			);
+			path = Interpreter;
+			sourceTree = "<group>";
+		};
 		BFBBB1E820E1DD99004F192E = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +386,9 @@
 				BF62CC5320F35E6C00EA68CF /* Strategy */,
 				BF62CC5B20F3662A00EA68CF /* Visitor */,
 				BF62CC6520F457CD00EA68CF /* TemplateMethod */,
+				BF62CC6A20F461A900EA68CF /* State */,
+				BF62CC7120F498B700EA68CF /* Iterator */,
+				BF62CC7820F49D4F00EA68CF /* Interpreter */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -719,6 +758,7 @@
 				BF62CC4F20F352F200EA68CF /* Originator.m in Sources */,
 				BFBBB24620E38D16004F192E /* FactoryA.m in Sources */,
 				BFBBB24D20E393A9004F192E /* Builder.m in Sources */,
+				BF62CC7B20F49D5900EA68CF /* Interpreter.m in Sources */,
 				BF62CC3D20F3385800EA68CF /* Colleague.m in Sources */,
 				BFBBB2A620E62D9F004F192E /* Request.m in Sources */,
 				BFBBB28F20E5D716004F192E /* Flyweight.m in Sources */,
@@ -726,11 +766,13 @@
 				BFBBB26620E3A77F004F192E /* Implementor.m in Sources */,
 				BF62CC6420F366C600EA68CF /* ObjectStruture.m in Sources */,
 				BFBBB29620E5E257004F192E /* Subject.m in Sources */,
+				BF62CC7420F498C700EA68CF /* State.m in Sources */,
 				BFBBB25020E393EA004F192E /* Director.m in Sources */,
 				BFBBB25A20E39B53004F192E /* Target.m in Sources */,
 				BFBBB2A320E62D8C004F192E /* Level.m in Sources */,
 				BF62CC3A20F3380D00EA68CF /* Mediator.m in Sources */,
 				BFBBB2AA20E63ED4004F192E /* Receiver.m in Sources */,
+				BF62CC7720F49D3A00EA68CF /* Iterator.m in Sources */,
 				BFBBB2A020E62D49004F192E /* Response.m in Sources */,
 				BFBBB27020E4BC45004F192E /* Decorator.m in Sources */,
 				BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */,
