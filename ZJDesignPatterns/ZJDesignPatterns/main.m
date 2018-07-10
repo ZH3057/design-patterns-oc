@@ -26,6 +26,8 @@
 #import "ObserverCenter.h"
 #import "Originator.h"
 #import "Context.h"
+#import "Visitor.h"
+#import "Element.h"
 
 void peopleInit(void);
 void sunInit (void);
@@ -44,6 +46,7 @@ void mediatorInit (void);
 void observerInit (void);
 void mementoInit (void);
 void strategyInit (void);
+void visitorInit (void);
 
 int main(int argc, char * argv[]) {
     @autoreleasepool {
@@ -98,6 +101,9 @@ int main(int argc, char * argv[]) {
         
         // 策略模式
         strategyInit();
+        
+        // 访问者模式
+        visitorInit();
         
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
@@ -317,6 +323,17 @@ void strategyInit (void) {
     ConcreteStrategy *strategy = [[ConcreteStrategy alloc] init];
     Context *c = [[Context alloc] initWithConcreteStrategy:strategy];
     [c doAnythinig];
+}
+
+
+/**
+ 封装一些作用于某种数据结构中的各元素的操作
+ 它可以在不改变数据结构的前提下定义作用于这些元素的新的操作
+ */
+void visitorInit (void) {
+    Element *e = [[Element alloc] init];
+    Visitor *v = [[Visitor alloc] init];
+    [e accept:v];
 }
 
 

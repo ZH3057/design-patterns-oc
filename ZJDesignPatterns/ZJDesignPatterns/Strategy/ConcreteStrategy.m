@@ -11,7 +11,7 @@
 @implementation ConcreteStrategy
 
 - (void)doSomething {
-    NSLog(@"具体策略1的运算法则");
+    NSLog(@"具体策略的运算法则");
 }
 
 @end

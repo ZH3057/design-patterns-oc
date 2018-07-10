@@ -17,6 +17,9 @@
 		BF62CC5220F3530500EA68CF /* Caretaker.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC5120F3530500EA68CF /* Caretaker.m */; };
 		BF62CC5720F3637C00EA68CF /* ConcreteStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC5620F3637C00EA68CF /* ConcreteStrategy.m */; };
 		BF62CC5A20F363D100EA68CF /* Context.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC5920F363D100EA68CF /* Context.m */; };
+		BF62CC5E20F366A100EA68CF /* Visitor.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC5D20F366A100EA68CF /* Visitor.m */; };
+		BF62CC6120F366AF00EA68CF /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC6020F366AF00EA68CF /* Element.m */; };
+		BF62CC6420F366C600EA68CF /* ObjectStruture.m in Sources */ = {isa = PBXBuildFile; fileRef = BF62CC6320F366C600EA68CF /* ObjectStruture.m */; };
 		BFBBB1F620E1DD99004F192E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB1F520E1DD99004F192E /* AppDelegate.m */; };
 		BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBBB1F820E1DD99004F192E /* ViewController.m */; };
 		BFBBB1FC20E1DD99004F192E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFBBB1FA20E1DD99004F192E /* Main.storyboard */; };
@@ -101,6 +104,12 @@
 		BF62CC5620F3637C00EA68CF /* ConcreteStrategy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConcreteStrategy.m; sourceTree = "<group>"; };
 		BF62CC5820F363D100EA68CF /* Context.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Context.h; sourceTree = "<group>"; };
 		BF62CC5920F363D100EA68CF /* Context.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Context.m; sourceTree = "<group>"; };
+		BF62CC5C20F366A100EA68CF /* Visitor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Visitor.h; sourceTree = "<group>"; };
+		BF62CC5D20F366A100EA68CF /* Visitor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Visitor.m; sourceTree = "<group>"; };
+		BF62CC5F20F366AF00EA68CF /* Element.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Element.h; sourceTree = "<group>"; };
+		BF62CC6020F366AF00EA68CF /* Element.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Element.m; sourceTree = "<group>"; };
+		BF62CC6220F366C600EA68CF /* ObjectStruture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectStruture.h; sourceTree = "<group>"; };
+		BF62CC6320F366C600EA68CF /* ObjectStruture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectStruture.m; sourceTree = "<group>"; };
 		BFBBB1F120E1DD99004F192E /* ZJDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZJDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFBBB1F420E1DD99004F192E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFBBB1F520E1DD99004F192E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -271,6 +280,19 @@
 			path = Strategy;
 			sourceTree = "<group>";
 		};
+		BF62CC5B20F3662A00EA68CF /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				BF62CC5C20F366A100EA68CF /* Visitor.h */,
+				BF62CC5D20F366A100EA68CF /* Visitor.m */,
+				BF62CC5F20F366AF00EA68CF /* Element.h */,
+				BF62CC6020F366AF00EA68CF /* Element.m */,
+				BF62CC6220F366C600EA68CF /* ObjectStruture.h */,
+				BF62CC6320F366C600EA68CF /* ObjectStruture.m */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
 		BFBBB1E820E1DD99004F192E = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +334,7 @@
 				BF62CC4120F340CE00EA68CF /* Observer */,
 				BF62CC4920F3518300EA68CF /* Memento */,
 				BF62CC5320F35E6C00EA68CF /* Strategy */,
+				BF62CC5B20F3662A00EA68CF /* Visitor */,
 				BFBBB22620E1DDC2004F192E /* AppDelegate */,
 				BFBBB22720E1DDCE004F192E /* ViewController */,
 				BFBBB22820E1DDEB004F192E /* Supporting */,
@@ -686,6 +709,7 @@
 				BFBBB28F20E5D716004F192E /* Flyweight.m in Sources */,
 				BFBBB28720E4E4BD004F192E /* ModuleA.m in Sources */,
 				BFBBB26620E3A77F004F192E /* Implementor.m in Sources */,
+				BF62CC6420F366C600EA68CF /* ObjectStruture.m in Sources */,
 				BFBBB29620E5E257004F192E /* Subject.m in Sources */,
 				BFBBB25020E393EA004F192E /* Director.m in Sources */,
 				BFBBB25A20E39B53004F192E /* Target.m in Sources */,
@@ -695,7 +719,9 @@
 				BFBBB2A020E62D49004F192E /* Response.m in Sources */,
 				BFBBB27020E4BC45004F192E /* Decorator.m in Sources */,
 				BFBBB1F920E1DD99004F192E /* ViewController.m in Sources */,
+				BF62CC6120F366AF00EA68CF /* Element.m in Sources */,
 				BF62CC5220F3530500EA68CF /* Caretaker.m in Sources */,
+				BF62CC5E20F366A100EA68CF /* Visitor.m in Sources */,
 				BFBBB25420E39470004F192E /* Goods.m in Sources */,
 				BF62CC4020F339B700EA68CF /* Manager.m in Sources */,
 				BF62CC5A20F363D100EA68CF /* Context.m in Sources */,
